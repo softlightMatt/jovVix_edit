@@ -40,7 +40,7 @@ services:
       context: ./api/
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "3000-3005:3000"
     restart: on-failure
     env_file:
       - ./api/.env.docker
